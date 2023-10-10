@@ -1,0 +1,88 @@
+
+h1{ 
+    font-family: 'Barlow';font-size: 40px;
+    font-weight: 400;
+    color: aliceblue;
+}
+h2{
+    font-family: 'Barlow';font-size: 32px;
+    font-weight: 300;  
+    color: aliceblue; 
+}
+
+ul{
+    font-family: 'Barlow';font-size: 18px;
+    font-weight: 300;  
+    color: aliceblue; 
+}
+
+li{ 
+margin-bottom: 12px;
+}
+
+header{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color:#1eaef4 ;
+}
+
+a{text-decoration: none;
+color: #F2660C;
+}
+
+a:hover{text-decoration: underline;}
+
+.link{
+    display:flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.Details{ 
+    display: flex;
+    margin: 2rem;
+}
+.GIF{
+    display: flex;
+    justify-content: center ;
+    width: 100%;
+    margin:2rem;
+}
+
+
+.rectangle{
+display: flex;
+  border-radius: 20px; 
+  background-color:#1eaef4; 
+  padding: 20px;
+  width: 25%;
+  height: 50%;
+  margin:1rem;
+}
+
+@media only screen and (max-width: 900px){
+h1{font-size: 2rem;}
+h2{font-size: 1.75rem;}
+h3{font-size: 1.5rem;}
+.Details{ 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.GIF{
+flex-wrap: wrap;
+justify-content: center;
+width: 100%;
+}
+}
+
+@media only screen and (max-width: 600px){
+    h1{font-size: 1.75rem;}
+    h2{font-size: 1.5rem;}
+    h3{font-size: 1rem;}
+    .Details{ 
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

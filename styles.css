@@ -34,7 +34,6 @@ header{
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    padding: ;
     background-color: #F3F4F4;
     width: 336px ;
     height:650px;
@@ -43,7 +42,7 @@ header{
 }
 .panel:hover{
     background-color: #d9effa;
-    cursor: grab;
+    cursor:pointer;
 }
 .panel:hover .image {
     transform: scale(1.1);
@@ -125,42 +124,70 @@ a:hover{text-decoration: underline;}
     margin: 2rem;
 }
 
-.Details{ 
+.Stills{
     display: flex;
-    margin: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
 }
-.GIF{
-    display: flex;
-    justify-content: center ;
-    width: 100%;
-    margin:2rem;
-}
+figure {
+    border: thin #c0c0c0 solid;
+    padding: 5px;
+    max-width: 100%;
+    margin: 10px;
+  }
+  img {
+    max-width: 75vw;
+  }
+  
+  figcaption {
+    background-color: #222;
+    font-family: 'Barlow';font-size: 18px;
+    font-weight: 300;  
+    color: aliceblue; 
+    padding: 3px;
+    text-align: center;
+  }
 
+  .Details{ 
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 20px;
+}
 
 .rectangle{
-display: flex;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
   border-radius: 20px; 
-  background-color:#1eaef4; 
-  padding: 20px;
-  width: 25%;
-  height: 50%;
-  margin:1rem;
+  background-color:#1eaef4;
+
 }
+
 
 @media only screen and (max-width: 900px){
 h1{font-size: 2rem;}
 h2{font-size: 1.75rem;}
 h3{font-size: 1.5rem;}
+
 .Details{ 
     flex-wrap: wrap;
     justify-content: center;
 }
-.GIF{
-flex-wrap: wrap;
-justify-content: center;
-width: 100%;
+.img{
+    width:500px;
 }
 }
+
+@media only screen and (max-width: 640px){
+    .details{flex-wrap:wrap;}
+    .rectangle{max-width: 100%;}
+
+
 
 @media only screen and (max-width: 600px){
     h1{font-size: 1.75rem;}
@@ -170,4 +197,5 @@ width: 100%;
         flex-wrap: wrap;
         justify-content: center;
     }
+}
 }

@@ -7,15 +7,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Build</title>
+    <title>Beta Deacription</title>
 </head>
 
     <header>
-        <h1>IDM 241 Assignment 2: Alpha Build</h1>
+        <h1>IDM 241 Assignment 3: Beta Description</h1>
     </header>
 
     <body>
-    <div class="panel">
+    <!-- <div class="panel">
         <div class="image">
             <img src="images/ring_stickup_cam_pro_146x146.png" alt="Ring Stick Up Cam Pro">
         </div>
@@ -28,27 +28,19 @@
         </div>
         <div class="text">
             Shop all Stick Up Cams
-        </div>
+        </div> -->
     </div>
     <div class="Stills">
         <figure>
-        <img src="images/Homescreen.png" class="homescreen">
-            <figcaption>This is the homescreen.</figcaption>
+        <img src="images/BetaInteraction1.jpg" class="homescreen">
+            <figcaption>Microinteraction 1</figcaption>
         </figure>
         <figure>
-        <img src="images/products.png" class="products">
-            <figcaption>Navigate to the products tab.</figcaption>
+        <img src="images/BetaInteraction2.jpg" class="products">
+            <figcaption>Microinteraction 2</figcaption>
         </figure>
-        <figure>
-        <img src="images/Hover On.png" class="hover-on">
-            <figcaption>Hover over the product panel to view the microinteraction.</figcaption>
-        </figure>
-        <figure>
-        <img src="images/Hover Off.png" class="hover-off">
-            <figcaption>Move the mouse off the product panel.</figcaption>
-        </figure>
-
     </div>
+
     <div class="link">
         <h2><a href="https://ring.com/">https://ring.com/</a></h2>
     </div>
@@ -58,22 +50,31 @@
                 <h2>Triggers</h2>
                     <ul>
                     <li>Hover on a product information panel.</li>
-                    <li>Hover off a product information panel.</li>    
+                    <li>Hover off a product information panel.</li>
+                    <li>Hover on the Shop All button.</li>  
+                    <li>Hover off the Shop All button.</li>  
                     </ul>
         </div>
         <div class="rectangle">
             <h2>Rules</h2>
             <ul>
-                <p><b>Hover On:</b></p>
+                <p><b>Hover On Panel:</b></p>
                 <li>Cursor changes from an arrow to a pointer.</li>
                 <li>Image of product grows and expands. </li>  
-                <li>Bottom call to action statement changes color.</li>
+                <li>"Shop All" call to action button appears.</li>
                 <li>Background quickly fades into a light blue.</li>
-                <p><b>Hover Off:</b></p>
-                <l1>Panel quickly fades back to its original color.</l1>
+                <p><b>Hover Off Panel:</b></p>
+                <li>Panel quickly fades back to its original color.</li>
                 <li>Image shrinks back to its original size.</li>
-                <li>Call to action statement changes back to its initial color.</li>
+                <li>"Shop All" Call to action button dissappears.</li>
                 <li>Cursor changes from a pointer to an arrow.</li>
+                <p><b>Hover On Button:</b></p>
+                <li>Orange color slides in across button</li>
+                <li>Button texts changes color from blue to white.</li>
+                <p><b>Hover Off Button:</b></p>
+                <li>Orange color slides back off button.</li>
+                <li>Button returns to white color.</li>
+                <li>Button text changes back from white to blue.</li>
             </ul>
         </div>
         <div class="rectangle">
@@ -85,7 +86,7 @@
                         <li>Bottom call to action statement changes color.</li>
                         <li>Background quickly fades into a light blue.</li>
                         <p><b>Hover Off:</b></p>
-                        <l1>Panel quickly fades back to its original color.</l1>
+                        <li>Panel quickly fades back to its original color.</li>
                         <li>Image shrinks back to its original size.</li>
                         <li>Call to action statement changes back to its initial color.</li>
                         <li>Cursor changes from a pointer to an arrow.</li>
@@ -95,7 +96,9 @@
         <div class="rectangle">
                 <h2>Loops & Modes</h2>
                     <ul>
-                        <li>None.</li>
+                        <p><b>Mode</b></p>
+                        <li>When cursor first hovers on panel Shop All button appears.</li>
+                        <p><b>No Loops.</b> <p>
                     </ul>
                 </div>
     </div>

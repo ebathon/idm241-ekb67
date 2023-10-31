@@ -1,4 +1,4 @@
-
+body{width: 100%;}
 
 h1{ 
     font-family: 'Barlow';font-size: 40px;
@@ -126,18 +126,17 @@ a:hover{text-decoration: underline;}
 
 .Stills{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 10px;
+    margin: 0 auto;
+    width: 90%;
 }
 figure {
     border: thin #c0c0c0 solid;
     padding: 5px;
-    max-width: 100%;
-    margin: 10px;
+    margin: 20px auto;
+    width:50%;
   }
   img {
-    max-width: 75vw;
+    width: 100%;
   }
   
   figcaption {
@@ -174,6 +173,12 @@ h1{font-size: 2rem;}
 h2{font-size: 1.75rem;}
 h3{font-size: 1.5rem;}
 
+.Stills{
+    display: inline-block;
+    margin: 20px auto;
+    width: 100%;
+    }
+
 .Details{ 
     flex-wrap: wrap;
     justify-content: center;
@@ -187,8 +192,6 @@ h3{font-size: 1.5rem;}
     .details{flex-wrap:wrap;}
     .rectangle{max-width: 100%;}
 
-
-
 @media only screen and (max-width: 600px){
     h1{font-size: 1.75rem;}
     h2{font-size: 1.5rem;}
@@ -197,5 +200,6 @@ h3{font-size: 1.5rem;}
         flex-wrap: wrap;
         justify-content: center;
     }
+
 }
 }

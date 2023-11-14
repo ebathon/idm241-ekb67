@@ -126,9 +126,15 @@ a:hover{text-decoration: underline;}
 }
 
 .Stills{
-    display: flex;
+    /* display: flex;
     margin: 0 auto;
-    width: 90%;
+    width: 90%; */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    width: 100%;
 }
 figure {
     border: thin #c0c0c0 solid;
@@ -152,7 +158,7 @@ figure {
   .Details{ 
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-auto-rows: 1fr;
     gap: 20px;
 }
@@ -191,20 +197,21 @@ figure {
     margin-left: auto;
     margin-right: auto;
     opacity: 1;
-    align-self: center; /* Center the button horizontally */
+    align-self: center; 
     margin-top: 30px;
     /*margin-bottom: 10px; Add some margin to space it from the bottom*/
     transition: opacity 1s;
 }
 
 .shop-button::before {
-    content: '';
+    content: 'Stick Up Cam Pro Battery';
     position: absolute;
-    width: 0;
+    width: -100%;
     height: 100%;
     left: 0;
     bottom: 0;
-    background-color: #FF5733;
+    background-color: #FF5733; 
+    /* opacity: 0.5; */
     color: aliceblue;
     transition: width 0.3s;
 }
@@ -217,6 +224,9 @@ figure {
     color: #fff; /* Change text color to white */
 }
 
+
+
+/*Media Queries*/ 
 
 @media only screen and (max-width: 900px){
 h1{font-size: 2rem;}

@@ -1,5 +1,6 @@
-body{width: 100%;
-margin:0}
+body{
+    margin:0
+}
 
 h1{ 
     font-family: 'Barlow';font-size: 40px;
@@ -134,7 +135,6 @@ a:hover{text-decoration: underline;}
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     grid-auto-rows: 1fr;
     gap: 20px;
-    width: 100%;
 }
 figure {
     border: thin #c0c0c0 solid;

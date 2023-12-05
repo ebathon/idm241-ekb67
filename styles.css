@@ -20,8 +20,8 @@ ul{
 }
 
 li{ 
-margin-bottom: 12px;
-}
+margin-bottom: 6px;
+} 
 
 header{
     display:flex;
@@ -158,21 +158,27 @@ figure {
   .Details{ 
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-auto-rows: 1fr;
     gap: 20px;
 }
 
-.rectangle{
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
-    width: 100%;
-    margin-bottom: 20px;
-  border-radius: 20px; 
-  background-color:#1eaef4;
 
+.rectangle-row {
+   grid-column: span 3; /* Header and footer span across both columns */
+   background-color: #1eaef4;
+   color: white;
+   padding: 20px;
+   border-radius:20px ;
+ }
+
+.rectangle {
+    background-color:#1eaef4;
+    display: grid;
+    padding: 20px;
+    justify-content: left;
+    border-radius: 20px;
 }
+
+
 .panel:hover .text {
     color: #ffffff; /* Change to your desired color */
 }
@@ -187,7 +193,7 @@ figure {
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    transition: opacity 1s;
+    transition: background-color 0.3s ease, color 0.3s ease;
     position: relative;
     overflow: hidden;
 }
@@ -199,32 +205,35 @@ figure {
     opacity: 1;
     align-self: center; 
     margin-top: 30px;
-    /*margin-bottom: 10px; Add some margin to space it from the bottom*/
+    margin-bottom: 10px;
     transition: opacity 1s;
 }
 
-.shop-button::before {
-    content: 'Stick Up Cam Pro Battery';
+  .shop-button::before {
+    content: "Shop All Stick-Up Cams";
     position: absolute;
-    width: -100%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    background-color: #FF5733; 
-    /* opacity: 0.5; */
-    color: aliceblue;
-    transition: width 0.3s;
-}
-
-.shop-button:hover::before {
+    padding-top: 15px;
+    top: 0;
+    left: -100%;
     width: 100%;
+    height: 100%;
+    background-color: #e74c3c;
+    transition: left 0.3s ease;
+    overflow: hidden;
+  }
+
+  .shop-button:hover::before {
+    left: 0;
+  }
+  .shop-button:hover{
+    /* transform: translateY(-10px); */
+    transition:0.5s bottom ease, 0.5s box-shadow ease;;
 }
+.shop-button:active{
+    transform: translateY(8px);
+    box-shadow:none;
 
-.shop-button:hover {
-    color: #fff; /* Change text color to white */
 }
-
-
 
 /*Media Queries*/ 
 

@@ -1,0 +1,153 @@
+body{
+    margin:0
+}
+
+h1{ 
+    font-family: 'Barlow';font-size: 40px;
+    font-weight: 400;
+    color: aliceblue;
+}
+h2{
+    font-family: 'Barlow';font-size: 32px;
+    font-weight: 300;  
+    color: rgb(1, 15, 28); 
+}
+
+p{
+    font-family: 'Barlow';font-size: 20px;
+    font-weight: 400;  
+    color: rgb(1, 15, 27);
+    line-height: 26px; 
+}
+ul{
+    font-family: 'Barlow';font-size: 18px;
+    font-weight: 300;  
+    color: rgb(1, 15, 27); 
+}
+
+figure{
+padding: 5px;
+margin: 20px auto;
+}
+.figcaption{    
+   
+    font-family: 'Barlow';font-size: 18px;
+    font-weight: 300;  
+    color: aliceblue; 
+    padding: 3px;
+    text-align: center;
+}
+
+li{ 
+margin-bottom: 6px;
+font-family: 'Barlow';font-size: 18px;
+font-weight: 400;  
+color: rgb(1, 15, 27);
+line-height: 22px; 
+
+} 
+
+header{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color:#1eaef4 ;
+}
+
+.container{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 16rem;
+    padding-right: 16rem;
+}
+
+.hero-image{
+    margin-top: 40px;
+text-align: center;
+/* max-width: 500px; */
+}
+.image{
+    width: 50%;
+    /* height:75%; */
+}
+
+.beta-image{
+    margin-top: 40px;
+    text-align: center;   
+}
+img{
+    width:70%
+}
+       
+         .Alpha-Container {
+            /* text-align:center; */
+            margin:auto;
+            display:block;
+            text-align: center; /* Center the images horizontally */
+            margin-bottom: 10px;
+        }
+        
+
+        /* Style for individual images */
+        .Alpha-Container img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto; /* Center the images horizontally within the container */
+        } 
+
+
+.Details{ 
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+
+
+
+
+/*Media Queries*/ 
+
+@media only screen and (max-width: 900px){
+h1{font-size: 2rem;}
+h2{font-size: 1.75rem;}
+h3{font-size: 1.5rem;}
+
+.Stills{
+    display: inline-block;
+    margin: 20px auto;
+    width: 100%;
+    }
+
+.Details{ 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img{
+    width:500px;
+}
+}
+
+@media only screen and (max-width: 1000px){
+    .details{flex-wrap:wrap;}
+    .rectangle{max-width: 100%;}
+    .container{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+
+@media only screen and (max-width: 600px){
+    h1{font-size: 1.75rem;}
+    h2{font-size: 1.5rem;}
+    h3{font-size: 1rem;}
+    .Details{ 
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+}

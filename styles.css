@@ -185,17 +185,14 @@ a:hover{text-decoration: underline;}
   .shop-button:hover::before {
     left: 0;
   } 
-  .shop-button:hover{
-    /* transform: translateY(-10px); */
-    /* transition:0.5s bottom ease, 0.5s box-shadow ease;; */ */
-}
+ 
 .shop-button:active{
     transform: translateY(8px);
     box-shadow:none;
 }
 
 .rectangle-row {
-   grid-column: span 1; /* Header and footer span across both columns */
+   grid-column: span 4; /* Header and footer span across both columns */
    background-color: #1eaef4;
    color: white;
    padding: 20px;
